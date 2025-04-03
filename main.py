@@ -1,15 +1,15 @@
 import random
 '''stone: -1
    paper: 0
-   cizer: 1
+   scissor: 1
 '''
 computer=random.choice([-1,0,1])
-youCho=input("Enter your choice (stone as s/paper as p/cizer as c):")
+youCho=input("Enter your choice (stone as s/paper as p/scissor as s):")
 
-youDict={"s":-1,"p":0,"c":1}
+youDict={"s":-1,"p":0,"s":1}
 you=youDict[youCho]
 
-new_dict={-1:"Stone",0:"Paper",1:"Cizer"}
+new_dict={-1:"Stone",0:"Paper",1:"scissor"}
 
 print(f"Your choise is {new_dict[you]}")
 print(f"Computer choise is {new_dict[computer]}")
